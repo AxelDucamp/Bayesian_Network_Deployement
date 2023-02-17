@@ -1,0 +1,7 @@
+tensorflow
+tensorflow-probability
+pandas
+numpy
+flask
+scikit-learn
+gunicorn

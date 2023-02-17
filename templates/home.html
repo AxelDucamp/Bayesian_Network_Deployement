@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic App</title>
+</head>
+
+<body>
+    <form action="{{url_for('predict_html')}}" method="POST">
+        <input type="text" name="pclass" required placeholder="Pclass">
+        <br>
+        <input type="text" name="sex" required placeholder="Sex">
+        <br>
+        <input type="text" name="age" required placeholder="Age">
+        <br>
+        <input type="text" name="fare" required placeholder="Fare">
+        <br>
+        <input type="submit" value="Submit !">
+    </form>
+</body>
+
+This person is : {{pred}}
+
+</html>
